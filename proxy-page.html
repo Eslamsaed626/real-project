@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ProxyPage</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="./css/dropzone.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/min.css" />
+  </head>
+  <body>
+
+
+
+
+    
+
+
+
+    <main class="head">
+      <!-- <div class="top-div"> -->
+      <!-- start sidebar -->
+      <div class="side">
+        <div class="top">
+          <div class="spans">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+          <img src="./image/logo-gold.png" />
+        </div>
+        <div class="center">
+            <ul class="list-unstyled">
+                <li class="active-link index">
+                    <a href="./index.html">
+                        <img src="./image/Icon-25px.png">
+                    </a>
+                </li>
+                <li class="task-page">
+                    <a href="./task-page.html">
+                        <img src="./image/shap2.png">
+                    </a>
+                </li>
+                <li class=" proxy-page">
+                    <a href="./proxy-page.html">
+                        <img src="./image/Icon-24px.png">
+                    </a>
+                </li>
+                <li class="profile-page">
+                    <a href="./profile-page.html">
+                        <!-- <img src="./image/ic_account_circle.png"> -->
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                </li>
+                <li class="setting">
+                    <a href="./setting.html">
+                       <!-- <img src="./image/Shape1.png"> -->
+                       <i class="fas fa-cog"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom">
+                    v.1.0.0
+                </div>
+      </div>
+      <!-- end sidebar -->
+
+      <!-- start proxy-page -->
+      <div class="proxy-container">
+      <div class="proxyPage">
+        <div class="top-proxy">
+          <h2>Proxy Page</h2>
+          <div class="select">
+            <img src="./image/gairl.png" />
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dianne
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                <a class="dropdown-item" href="#"><i class="fas fa-redo"></i>renewal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="proxy-content">
+          <div class="proxy-form wow animate__bounceInLeft" data-wow-duration="1.4s">
+            <div class="form-head">
+              <h3>Add Proxy List</h3>
+            </div>
+            <!-- <div class="row">
+              <div class="col-12"> -->
+            <form>
+              <div>
+                <label>Proxy List Name</label>
+                <input type="text" id="listName" placeholder="suproxy220" />
+              </div>
+              <div>
+                <label>suproxy220</label>
+                <textarea
+                  type="text"
+                  placeholder="Using Format IP: Port; Username; Password"
+                  rows="4"
+                ></textarea>
+              </div>
+              <div class="load">
+                <label>Load File</label>
+                <div
+                  action="/file-upload"
+                  class="dropzone mb-0"
+                  id="my-awesome-dropzone"
+                >
+                  <div class="text-center mb-0">
+                    <i class="fas fa-upload"></i>
+                    <h5>Upload a Proxy File</h5>
+                    <span>Drag and drop file here</span>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons">
+                <span>
+                  <i class="fas fa-trash"></i>
+                  Delete
+                </span>
+                <span id="addList">
+                  <i class="fas fa-save"></i>
+                  Save Profile
+                </span>
+              </div>
+            </form>
+          <!-- </div>
+          </div> -->
+          </div>
+
+          <div class="proxy-table wow animate__bounceInRight" data-wow-duration="1.4s">
+            <div class="table-head">
+              <div class="table-head-top">
+                <h5>24 Active Proxies</h5>
+                <div>
+                  <span>
+                    <i class="fas fa-upload"></i>
+                    Export
+                  </span>
+                  <span>
+                    
+                    <i class="fas fa-download"></i>
+                    Import
+                  </span>
+                </div>
+              </div>
+              <div class="table-head-down">
+                <span>PROXY NAME</span>
+                <span>CREATED</span>
+                <strong>ACTION</strong>
+              </div>
+            </div>
+            <div class="table-content">
+              <table id="listTable">
+                <thead>
+                  <tr>
+                    <td>
+
+                      <input type="text" value="RevolveProxy-Ultimate990" disabled="disabled">
+                      <span>Number of Product: 34</span>
+                    </td>
+                    <td>
+                      <h6>May, 23 2020</h6>
+                      <span>12:49am</span>
+                    </td>
+                    <td>
+                      <i class="fas fa-save d-none" id="save1"></i>
+                      <i class="fas fa-pen"  id="pen1"></i>
+                      <i class="fas fa-trash" id="clear1"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" value="RevolveProxy-Ultimate990" disabled="disabled">
+                      <span>Number of Product: 34</span>
+                    </td>
+                    <td>
+                      <h6>May, 23 2020</h6>
+                      <span>12:49am</span>
+                    </td>
+                    <td>
+                      <i class="fas fa-save d-none" id="save1"></i>
+                      <i class="fas fa-pen" id="pen1"></i>
+                      <i class="fas fa-trash" id="clear1"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" value="RevolveProxy-Ultimate990" disabled="disabled">
+                      <span>Number of Product: 34</span>
+                    </td>
+                    <td>
+                      <h6>May, 23 2020</h6>
+                      <span>12:49am</span>
+                    </td>
+                    <td>
+                      <i class="fas fa-save d-none" id="save1"></i>
+                      <i class="fas fa-pen" id="pen1"></i>
+                      <i class="fas fa-trash" id="clear1"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" value="RevolveProxy-Ultimate990" disabled="disabled">
+                      <span>Number of Product: 34</span>
+                    </td>
+                    <td>
+                      <h6>May, 23 2020</h6>
+                      <span>12:49am</span>
+                    </td>
+                    <td>
+                      <i class="fas fa-save d-none" id="save1"></i>
+                      <i class="fas fa-pen" id="pen1"></i>
+                      <i class="fas fa-trash" id="clear1"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" value="RevolveProxy-Ultimate990" disabled="disabled">
+                      <span>Number of Product: 34</span>
+                    </td>
+                    <td>
+                      <h6>May, 23 2020</h6>
+                      <span>12:49am</span>
+                    </td>
+                    <td>
+                      <i class="fas fa-save d-none" id="save1"></i>
+                      <i class="fas fa-pen" id="pen1"></i>
+                      <i class="fas fa-trash" id="clear1"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" value="RevolveProxy-Ultimate990" disabled="disabled">
+                      <span>Number of Product: 34</span>
+                    </td>
+                    <td>
+                      <h6>May, 23 2020</h6>
+                      <span>12:49am</span>
+                    </td>
+                    <td>
+                      <i class="fas fa-save d-none" id="save1"></i>
+                      <i class="fas fa-pen" id="pen1"></i>
+                      <i class="fas fa-trash" id="clear1"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" value="RevolveProxy-Ultimate990" disabled="disabled">
+                      <span>Number of Product: 34</span>
+                    </td>
+                    <td>
+                      <h6>May, 23 2020</h6>
+                      <span>12:49am</span>
+                    </td>
+                    <td>
+                      <i class="fas fa-save d-none" id="save1"></i>
+                      <i class="fas fa-pen" id="pen1"></i>
+                      <i class="fas fa-trash" id="clear1"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" value="RevolveProxy-Ultimate990" disabled="disabled">
+                      <span>Number of Product: 34</span>
+                    </td>
+                    <td>
+                      <h6>May, 23 2020</h6>
+                      <span>12:49am</span>
+                    </td>
+                    <td>
+                      <i class="fas fa-save d-none" id="save1"></i>
+                      <i class="fas fa-pen" id="pen1"></i>
+                      <i class="fas fa-trash" id="clear1"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" value="RevolveProxy-Ultimate990" disabled="disabled">
+                      <span>Number of Product: 34</span>
+                    </td>
+                    <td>
+                      <h6>May, 23 2020</h6>
+                      <span>12:49am</span>
+                    </td>
+                    <td>
+                      <i class="fas fa-save d-none" id="save1"></i>
+                      <i class="fas fa-pen" id="pen1"></i>
+                      <i class="fas fa-trash" id="clear1"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" value="RevolveProxy-Ultimate990" disabled="disabled">
+                      <span>Number of Product: 34</span>
+                    </td>
+                    <td>
+                      <h6>May, 23 2020</h6>
+                      <span>12:49am</span>
+                    </td>
+                    <td>
+                      <i class="fas fa-save d-none" id="save1"></i>
+                      <i class="fas fa-pen" id="pen1"></i>
+                      <i class="fas fa-trash" id="clear1"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="text" value="RevolveProxy-Ultimate990" disabled="disabled">
+                      <span>Number of Product: 34</span>
+                    </td>
+                    <td>
+                      <h6>May, 23 2020</h6>
+                      <span>12:49am</span>
+                    </td>
+                    <td>
+                      <i class="fas fa-save d-none" id="save1"></i>
+                      <i class="fas fa-pen" id="pen1"></i>
+                      <i class="fas fa-trash" id="clear1"></i>
+                    </td>
+                  </tr> 
+                </thead>
+              </table>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+      <!-- end proxy-page -->
+    <!-- </div> -->
+    </main>
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/dropzone.js"></script>
+    <script src="./js/min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+  </body>
+</html>

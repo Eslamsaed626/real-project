@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskPage</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/min.css" />
+  </head>
+  <body>
+
+
+    
+
+
+
+    <main class="head">
+      <div class="top-div">
+      <!-- start sidebar -->
+      <div class="side side-task">
+        <div class="top">
+          <div class="spans">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+          <img src="./image/logo-gold.png" />
+        </div>
+        <div class="center">
+          <ul class="list-unstyled">
+            <li class="active-link index">
+              <a href="./index.html">
+                <img src="./image/Icon-25px.png" />
+              </a>
+            </li>
+            <li class="task-page">
+              <a href="./task-page.html">
+                <img src="./image/shap2.png" />
+              </a>
+            </li>
+            <li class="proxy-page">
+              <a href="./proxy-page.html">
+                <img src="./image/Icon-24px.png" />
+              </a>
+            </li>
+            <li class="profile-page">
+              <a href="./profile-page.html">
+                <!-- <img src="./image/ic_account_circle.png" /> -->
+                <i class="fas fa-user-circle"></i>
+              </a>
+            </li>
+            <li class="setting">
+              <a href="./setting.html">
+                 <!-- <img src="./image/Shape1.png"> -->
+                 <i class="fas fa-cog"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom">
+          v.1.0.0
+        </div>
+      </div>
+      <!-- end sidebar -->
+
+      <!-- start task-page -->
+
+      <div class="task-container">
+        <div class="taskPage">
+          <div class="top-task">
+            <h2>Task Page</h2>
+            <div class="select">
+              <img src="./image/gairl.png" />
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dianne
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-redo"></i>renewal</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="controller">
+            <div class="left-control wow animate__bounceInLeft" data-wow-duration="1.4s">
+              <span id="startAll">
+                <i class="fas fa-play"></i>
+                Start All
+              </span>
+              <span id="stop">
+                <i class="fas fa-stop"></i>
+                Stop All
+              </span>
+              <span id="deleteAll">
+                <i class="fas fa-trash"></i>
+                Delete All
+              </span>
+            </div>
+            <div class="right-control wow animate__bounceInRight" data-wow-duration="1.4s">
+              <span id="open">
+                <img src="./image/Shape.png" />
+                Open Captcha Harvester
+              </span>
+              <span>
+                <i class="fas fa-pen"></i>
+                Mass Edit
+              </span>
+              <span id="add">
+                <i class="fas fa-plus"></i>
+                Create Monitor
+              </span>
+            </div>
+          </div>
+
+          <div class="table-head">
+            <!-- <span class="s1">
+              <label class="container ss1">
+                <input type="checkbox" />
+                <span class="checkmark cust"></span>
+              </label>
+              TASK NAME
+            </span>
+            <span class="s2">SIZE</span>
+            <span class="s3">PROFILE</span>
+            <strong class="sp1">PROXY</strong>
+            <strong class="sp1">STATUS</strong>
+            <strong class="sp1">ACTION</strong> -->
+          </div>
+          <div class="contain-table">
+            <table id="taskTable">
+
+
+
+
+
+
+
+
+              <thead>
+                <tr class="tr">
+                  <th>
+                    <label class="container ss1">
+                      <input type="checkbox" />
+                      <span class="checkmark cust"></span>
+                    </label>
+                    TASK NAME
+                  </th>
+
+
+                  <th>SIZE</th>
+                  <th>PROFILE</th>
+                  <th>PROXY</th>
+                  <th>STATUS</th>
+                  <th>ACTION</th>
+                </tr>
+              </thead>
+
+
+
+
+
+
+
+
+
+
+
+
+              
+              <tbody>
+                <tr class="wow animate__zoomIn" data-wow-duration="1s">
+                  <td class="task">
+                    <label class="container">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="ml-2">
+                      <input
+                        type="text"
+                        value="Yezzy Cutout logo Crewnek"
+                        disabled="disabled"
+                      />
+                      <span>Footlocker US</span>
+                    </div>
+                  </td>
+                  <td class="size">US7</td>
+                  <td class="profile">
+                    <img src="./image/Group-16.png" />
+                    <h6>Casual Visa</h6>
+                  </td>
+                  <td class="proxy"><h6>Casual Visa</h6></td>
+                  <td class="status">Running</td>
+                  <td class="action">
+                    <i class="fas fa-pause" id="play"></i>
+                    <i class="fas fa-pen" id="edit"></i>
+                    <i class="fas fa-trash" id="delete"></i>
+                  </td>
+                </tr>
+
+                <tr class="wow animate__zoomIn" data-wow-duration="1.2s">
+                  <td class="task">
+                    <label class="container">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="ml-2">
+                      <input
+                        type="text"
+                        value="Yezzy Cutout logo Crewnek"
+                        disabled="disabled"
+                      />
+                      <span>Footlocker US</span>
+                    </div>
+                  </td>
+                  <td class="size">US7</td>
+                  <td class="profile">
+                    <img src="./image/Group-16.png" />
+                    <h6>Casual Visa</h6>
+                  </td>
+                  <td class="proxy"><h6>Casual Visa</h6></td>
+                  <td class="status">Running</td>
+                  <td class="action">
+                    <i class="fas fa-pause" id="play"></i>
+                    <i class="fas fa-pen" id="edit"></i>
+                    <i class="fas fa-trash" id="delete"></i>
+                  </td>
+                </tr>
+
+                <tr class="wow animate__zoomIn" data-wow-duration="1.4s">
+                  <td class="task">
+                    <label class="container">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="ml-2">
+                      <input
+                        type="text"
+                        value="Yezzy Cutout logo Crewnek"
+                        disabled="disabled"
+                      />
+                      <span>Footlocker US</span>
+                    </div>
+                  </td>
+                  <td class="size">US7</td>
+                  <td class="profile">
+                    <img src="./image/Group-16.png" />
+                    <h6>Casual Visa</h6>
+                  </td>
+                  <td class="proxy"><h6>Casual Visa</h6></td>
+                  <td class="status orange">ldle</td>
+                  <td class="action">
+                    <i class="fas fa-play" id="play"></i>
+                    <i class="fas fa-pen" id="edit"></i>
+                    <i class="fas fa-trash" id="delete"></i>
+                  </td>
+                </tr>
+
+                <tr class="wow animate__zoomIn" data-wow-duration="1.6s">
+                  <td class="task">
+                    <label class="container">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="ml-2">
+                      <input
+                        type="text"
+                        value="Yezzy Cutout logo Crewnek"
+                        disabled="disabled"
+                      />
+                      <span>Footlocker US</span>
+                    </div>
+                  </td>
+                  <td class="size">US7</td>
+                  <td class="profile">
+                    <img src="./image/Group-16.png" />
+                    <h6>Casual Visa</h6>
+                  </td>
+                  <td class="proxy"><h6>Casual Visa</h6></td>
+                  <td class="status">Running</td>
+                  <td class="action">
+                    <i class="fas fa-pause" id="play"></i>
+                    <i class="fas fa-pen" id="edit"></i>
+                    <i class="fas fa-trash" id="delete"></i>
+                  </td>
+                </tr>
+
+                <tr class="wow animate__zoomIn" data-wow-duration="1.8s">
+                  <td class="task">
+                    <label class="container">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="ml-2">
+                      <input
+                        type="text"
+                        value="Yezzy Cutout logo Crewnek"
+                        disabled="disabled"
+                      />
+                      <span>Footlocker US</span>
+                    </div>
+                  </td>
+                  <td class="size">US7</td>
+                  <td class="profile">
+                    <img src="./image/Group-16.png" />
+                    <h6>Casual Visa</h6>
+                  </td>
+                  <td class="proxy"><h6>Casual Visa</h6></td>
+                  <td class="status orange">ldle</td>
+                  <td class="action">
+                    <i class="fas fa-play" id="play"></i>
+                    <i class="fas fa-pen" id="edit"></i>
+                    <i class="fas fa-trash" id="delete"></i>
+                  </td>
+                </tr>
+
+                <tr class="wow animate__zoomIn" data-wow-duration="2s">
+                  <td class="task">
+                    <label class="container">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="ml-2">
+                      <input
+                        type="text"
+                        value="Yezzy Cutout logo Crewnek"
+                        disabled="disabled"
+                      />
+                      <span>Footlocker US</span>
+                    </div>
+                  </td>
+                  <td class="size">US7</td>
+                  <td class="profile">
+                    <img src="./image/Group-16.png" />
+                    <h6>Casual Visa</h6>
+                  </td>
+                  <td class="proxy"><h6>Casual Visa</h6></td>
+                  <td class="status">Running</td>
+                  <td class="action">
+                    <i class="fas fa-pause" id="play"></i>
+                    <i class="fas fa-pen" id="edit"></i>
+                    <i class="fas fa-trash" id="delete"></i>
+                  </td>
+                </tr>
+
+                <tr class="wow animate__zoomIn" data-wow-duration="2.2s">
+                  <td class="task">
+                    <label class="container">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="ml-2">
+                      <input
+                        type="text"
+                        value="Yezzy Cutout logo Crewnek"
+                        disabled="disabled"
+                      />
+                      <span>Footlocker US</span>
+                    </div>
+                  </td>
+                  <td class="size">US7</td>
+                  <td class="profile">
+                    <img src="./image/Group-16.png" />
+                    <h6>Casual Visa</h6>
+                  </td>
+                  <td class="proxy"><h6>Casual Visa</h6></td>
+                  <td class="status orange">ldle</td>
+                  <td class="action">
+                    <i class="fas fa-play" id="play"></i>
+                    <i class="fas fa-pen" id="edit"></i>
+                    <i class="fas fa-trash" id="delete"></i>
+                  </td>
+                </tr>
+
+                <tr class="wow animate__zoomIn" data-wow-duration="2.4s">
+                  <td class="task">
+                    <label class="container">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="ml-2">
+                      <input
+                        type="text"
+                        value="Yezzy Cutout logo Crewnek"
+                        disabled="disabled"
+                      />
+                      <span>Footlocker US</span>
+                    </div>
+                  </td>
+                  <td class="size">US7</td>
+                  <td class="profile">
+                    <img src="./image/Group-16.png" />
+                    <h6>Casual Visa</h6>
+                  </td>
+                  <td class="proxy"><h6>Casual Visa</h6></td>
+                  <td class="status">Running</td>
+                  <td class="action">
+                    <i class="fas fa-pause" id="play"></i>
+                    <i class="fas fa-pen" id="edit"></i>
+                    <i class="fas fa-trash" id="delete"></i>
+                  </td>
+                </tr>
+
+                <tr class="wow animate__zoomIn" data-wow-duration="2.6s">
+                  <td class="task">
+                    <label class="container">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="ml-2">
+                      <input
+                        type="text"
+                        value="Yezzy Cutout logo Crewnek"
+                        disabled="disabled"
+                      />
+                      <span>Footlocker US</span>
+                    </div>
+                  </td>
+                  <td class="size">US7</td>
+                  <td class="profile">
+                    <img src="./image/Group-16.png" />
+                    <h6>Casual Visa</h6>
+                  </td>
+                  <td class="proxy"><h6>Casual Visa</h6></td>
+                  <td class="status">Running</td>
+                  <td class="action">
+                    <i class="fas fa-pause" id="play"></i>
+                    <i class="fas fa-pen" id="edit"></i>
+                    <i class="fas fa-trash" id="delete"></i>
+                  </td>
+                </tr>
+                <tr class="wow animate__zoomIn" data-wow-duration="2.8s">
+                  <td class="task">
+                    <label class="container">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="ml-2">
+                      <input
+                        type="text"
+                        value="Yezzy Cutout logo Crewnek"
+                        disabled="disabled"
+                      />
+                      <span>Footlocker US</span>
+                    </div>
+                  </td>
+                  <td class="size">US7</td>
+                  <td class="profile">
+                    <img src="./image/Group-16.png" />
+                    <h6>Casual Visa</h6>
+                  </td>
+                  <td class="proxy"><h6>Casual Visa</h6></td>
+                  <td class="status orange">ldle</td>
+                  <td class="action">
+                    <i class="fas fa-play" id="play"></i>
+                    <i class="fas fa-pen" id="edit"></i>
+                    <i class="fas fa-trash" id="delete"></i>
+                  </td>
+                </tr>
+                <tr class="wow animate__zoomIn" data-wow-duration="3s">
+                  <td class="task">
+                    <label class="container">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="ml-2">
+                      <input
+                        type="text"
+                        value="Yezzy Cutout logo Crewnek"
+                        disabled="disabled"
+                      />
+                      <span>Footlocker US</span>
+                    </div>
+                  </td>
+                  <td class="size">US7</td>
+                  <td class="profile">
+                    <img src="./image/Group-16.png" />
+                    <h6>Casual Visa</h6>
+                  </td>
+                  <td class="proxy"><h6>Casual Visa</h6></td>
+                  <td class="status">Running</td>
+                  <td class="action">
+                    <i class="fas fa-pause" id="play"></i>
+                    <i class="fas fa-pen" id="edit"></i>
+                    <i class="fas fa-trash" id="delete"></i>
+                  </td>
+                </tr>
+                <tr class="wow animate__zoomIn" data-wow-duration="3.2s">
+                  <td class="task">
+                    <label class="container">
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="ml-2">
+                      <input
+                        type="text"
+                        value="Yezzy Cutout logo Crewnek"
+                        disabled="disabled"
+                      />
+                      <span>Footlocker US</span>
+                    </div>
+                  </td>
+                  <td class="size">US7</td>
+                  <td class="profile">
+                    <img src="./image/Group-16.png" />
+                    <h6>Casual Visa</h6>
+                  </td>
+                  <td class="proxy"><h6>Casual Visa</h6></td>
+                  <td class="status orange">ldle</td>
+                  <td class="action">
+                    <i class="fas fa-play" id="play"></i>
+                    <i class="fas fa-pen" id="edit"></i>
+                    <i class="fas fa-trash" id="delete"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- first popup -->
+          <div class="overlay">
+            <div class="card-popup">
+              <div class="new">
+                <h3>New Task</h3>
+                <i class="fas fa-times"></i>
+              </div>
+              <form>
+                <div class="one">
+                  <div class="row">
+                    <div class="col-8">
+                      <label>Task Name</label>
+                      <input type="text" placeholder="Task Name" />
+                    </div>
+                    <div class="col-4">
+                      <label>Profile</label>
+                      <select>
+                        <option>Select Profile</option>
+                        <option>Select Profile</option>
+                        <option>Select Profile</option>
+                        <option>Select Profile</option>
+                      </select>
+                    </div>
+
+                    <div class="col-8">
+                      <label>Keywords</label>
+                      <input
+                        type="text"
+                        placeholder="Keyword (+positive, -negative)"
+                      />
+                    </div>
+                    <div class="col-4">
+                      <label>Proxy List</label>
+                      <select>
+                        <option>Select Proxy</option>
+                        <option>Select Proxy</option>
+                        <option>Select Proxy</option>
+                        <option>Select Proxy</option>
+                      </select>
+                    </div>
+
+                    <!-- <div class="three"> -->
+                    <!-- <div class="row"> -->
+                    <div class="col-12 mb-2">
+                      <label>Store</label>
+                      <select>
+                        <option>Select Store</option>
+                        <option>Select Store</option>
+                        <option>Select Store</option>
+                        <option>Select Store</option>
+                      </select>
+                    </div>
+                    <!-- <div class="row"> -->
+                    <div class="col-4">
+                      <label>Amount</label>
+                      <input type="number" />
+                    </div>
+                    <div class="col-4">
+                      <label>Size</label>
+                      <input type="text" placeholder="Size" />
+                    </div>
+                    <div class="col-4">
+                      <label>Color</label>
+                      <input type="text" placeholder="Color" />
+                    </div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- </div> -->
+                  </div>
+                </div>
+                <div class="four">
+                  <div>
+                    <h5>Advanced (Optional)</h5>
+                    <span class="outer">
+                      <span class="inner"></span>
+                    </span>
+                  </div>
+                  <div>
+                    <div>
+                      <label>Monitor Delay</label>
+                      <input type="text" placeholder="Delay (ms)" />
+                    </div>
+                    <div>
+                      <label>Error Delay</label>
+                      <input type="text" placeholder="Delay (ms)" />
+                    </div>
+                    <div>
+                      <label>Checkout Delay</label>
+                      <input type="text" placeholder="Delay (ms)" />
+                    </div>
+                  </div>
+                </div>
+                <div class="button">
+                  <button id="button-form">CREATE TASK</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- first popup -->
+          <!-- second popup -->
+          <div class="overlay2">
+            <div class="card-popup2">
+              <div class="top-card">
+                <h3>Captcha Harvester</h3>
+                <i class="fas fa-times"></i>
+              </div>
+              <div class="form-card">
+                <div>
+                  <label>Harvester Proxy</label>
+                  <input type="text" placeholder="IP:Port:Username:Password" />
+                </div>
+                <span>
+                  <i class="fas fa-plus"></i>
+                </span>
+              </div>
+              <div class="center-card">
+                <div class="robot">
+                  <img src="./image/check.png" />
+                </div>
+                <div class="center-buttons">
+                  <span>
+                    <img src="./image/rocket.png" />
+                    Test
+                  </span>
+                  <span>
+                    <img src="./image/icon.png" />
+                  </span>
+                </div>
+              </div>
+              <span class="save-btn">save</span>
+            </div>
+          </div>
+          <!-- second popup -->
+        </div>
+      </div>
+      <!-- end task-page -->
+    </div>
+    </main>
+
+ 
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+  </body>
+</html>

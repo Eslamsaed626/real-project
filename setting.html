@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/min.css">
+</head>
+<body>
+    
+
+
+    
+
+
+
+    <main class="head">
+        <div class="top-div">
+          <!-- start sidebar -->
+          <div class="side side-setting">
+            <div class="top">
+                <div class="spans">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+                <img src="./image/logo-gold.png">
+            </div>
+            <div class="center">
+                <ul class="list-unstyled">
+                    <li class="active-link index">
+                        <a href="./index.html">
+                            <img src="./image/Icon-25px.png">
+                        </a>
+                    </li>
+                    <li class="task-page">
+                        <a href="./task-page.html">
+                            <img src="./image/shap2.png">
+                        </a>
+                    </li>
+                    <li class=" proxy-page">
+                        <a href="./proxy-page.html">
+                            <img src="./image/Icon-24px.png">
+                        </a>
+                    </li>
+                    <li class="profile-page">
+                        <a href="./profile-page.html">
+                            <!-- <img src="./image/ic_account_circle.png"> -->
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                    <li class="setting">
+                        <a href="./setting.html">
+                             <!-- <img src="./image/Shape1.png"> -->
+                             <i class="fas fa-cog"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                v.1.0.0
+            </div>
+        </div>
+        <!-- end sidebar -->
+
+
+        <!-- start setting -->
+        <div class="setting-container">
+        <div class="setting">
+            <div class="top-setting">
+                <h2>Settings Page</h2>
+                <div class="select">
+                    <img src="./image/gairl.png">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dianne
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                          <a class="dropdown-item" href="#"><i class="fas fa-redo"></i>renewal</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="setting-content">
+              <div class="setting-content-center">
+                <div class="row">
+                    <div class="col-6 first top col-sm-12 col-xl-6">
+                        <div class="account wow animate__zoomIn" data-wow-duration="1.4s">
+                            <div class="account-btn">
+                                <h6>Account</h6>
+                                <span id="spanEdit">Edit</span>
+                            </div>
+                            <div class="account-info">
+                                <img src="./image/gairl.png">
+                                <div class="emails">
+                                    <div class="mb-4">
+                                        <span>USERNAME</span>
+                                        <input type="text" value="diannehuze#92839" disabled="disabled">
+                                    </div>
+                                    <div>
+                                        <span>EMAIL</span>
+                                        <input type="text" value="diannehuze21@email.email" disabled="disabled">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="general wow animate__zoomIn" data-wow-duration="1.4s">
+                            <h5>General Settings</h5>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label>Monitor Delay</label>
+                                    <input type="number" placeholder="Delay (ms)">
+                                    <span>
+                                        <i class="fas fa-sort-up"></i>
+                                        <i class="fas fa-sort-down"></i>
+                                    </span>
+                                </div>
+                                <div class="col-6">
+                                    <label>Keyword Delay</label>
+                                    <input type="number" placeholder="Delay (ms)">
+                                    <span>
+                                        <i class="fas fa-sort-up"></i>
+                                        <i class="fas fa-sort-down"></i>
+                                    </span>
+                                </div>
+                                <div class="col-6">
+                                    <label>Chekout Delay</label>
+                                    <input type="number" placeholder="24 (ms)">
+                                    <span>
+                                        <i class="fas fa-sort-up"></i>
+                                        <i class="fas fa-sort-down"></i>
+                                    </span>
+                                </div>
+                                <div class="col-6">
+                                    <label>Timeout Delay</label>
+                                    <input type="number" placeholder="34 (ms)">
+                                    <span>
+                                        <i class="fas fa-sort-up"></i>
+                                        <i class="fas fa-sort-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 second top col-sm-12 col-xl-6">
+                        <div class="license wow animate__zoomIn" data-wow-duration="1.4s">
+                            <div class="renewal">
+                              <h5>License: Renewal</h5>
+                              <span>Renewal</span>
+                            </div>
+                            <div class="license-info">
+                                <div class="shape" id="chart2">
+                                    <div class="percent">
+                                        <svg>
+                                            <circle cx="60" cy="60" r="60"></circle>
+                                            <circle cx="60" cy="60" r="60"></circle>
+                                        </svg>
+                                        <img src="./image/Group-12.png">
+                                    </div>
+                                </div>
+                                <div class="expire">
+                                    <span class="d-block">Expire Date</span>
+                                    <h4 class="d-inline-block">Dec, 3 2023</h4>
+                                    <span>(1233 days left)</span>
+                                    <div class="date">
+                                        <div>
+                                            <span>Last Renewal</span>
+                                            <h6>May, 12 2020</h6>
+                                        </div>
+                                        <div>
+                                            <span>Next Renewal</span>
+                                            <h6>Dec, 3 2023</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discord wow animate__zoomIn" data-wow-duration="1.4s">
+                            <h5>Discord Settings</h5>
+                            <div>
+                                <label>Webhook URL</label>
+                                <input type="text" placeholder="https://cdn.discordapp.com/attachments/721062565152/asdak…">
+                                <span class="copy">
+                                    <span>Copy Link</span>
+                                </span>
+                            </div>
+                            <span>
+                                <img src="./image/rocket.png">
+                                Test Webhook URL
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+
+                
+                <div class="save wow animate__bounceInRight" data-wow-duration="1.4s">
+                    <span class="saveSitting">
+                        <i class="fas fa-save"></i>
+                        Save sittings
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- end setting -->
+    </div>
+    </main>
+
+
+
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+</body>
+</html>
